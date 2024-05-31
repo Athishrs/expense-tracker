@@ -1,12 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 .App {
   text-align: center;
 }
 
+/* The styling of the heading "Expense Tracker"*/
+#heading
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 72px;
+  color: #58A399;
+}
+/* Styling for the input box*/
+.input-box
+{
+      width: 300px;
+      height: 60px;
+      margin: 0 auto;
+      border: none; /* <-- This thing here */
+      border:solid 1px #ccc;
+      border-radius: 20px;
+}
+.btn
+{
+  margin-top: 20px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #58A399;
+  color: aliceblue;
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  align-items: center;
+  
+}
+.parent
+{
+  border: none;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  border: none;
+  padding: 5px;
+  vertical-align: middle;
+  width: fit-content;
+  background-color: #58A399;
+  color: white;
+  margin:2px;
+}
+
+.grid-container-element { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-gap: 20px; 
+  border: none; 
+  width: 50%; 
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+} 
+.grid-child-element { 
+  margin: 10px; 
+  border: none; 
+  width: 175px;
+  background-color: #58A399;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+body
+{
+  background-color:#FFFFDD;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.data
+{
+  text-transform: capitalize;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
